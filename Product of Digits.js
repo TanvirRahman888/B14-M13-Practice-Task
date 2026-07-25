@@ -8,7 +8,7 @@ Input           Output
 4040            0
 */
 
-const digits=30;
+const digits=33;
 
 function productOfDigits(digits){
     if (digits<9) {
@@ -17,7 +17,7 @@ function productOfDigits(digits){
     const numToStr=digits.toString().split("")
     let result=1;
     for (const digit of numToStr) {
-        result=result*digit;
+        result=result*Number(digit);
     }
     return result;
 }
