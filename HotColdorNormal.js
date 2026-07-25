@@ -2,14 +2,20 @@
 
 function checkTemperature(temp){
     if (temp>30) {
-        console.log("It's Hot");
+        return "It's Hot";
     } 
     else if (temp<15) {
-        console.log("It's Cold");
+        return "It's Cold";
     } 
     else {
-        console.log("It's Normal");
+        return "It's Normal";
     }
 }
 
-checkTemperature(20)
+console.log(checkTemperature(35)); // Expected: "Hot"
+console.log(checkTemperature(10)); // Expected: "Cold"
+console.log(checkTemperature(20)); // Expected: "Normal"
+
+// checkTemperature(35); // Expected: "Hot"
+// checkTemperature(10); // Expected: "Cold"
+// checkTemperature(20); // Expected: "Normal"
